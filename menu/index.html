@@ -1,56 +1,39 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Menu | Fern &amp; Fig Kitchen (demo)</title>
-<meta name="description" content="Full menu for Fern & Fig Kitchen, a fictional practice restaurant: salads, wraps, bowls, flatbreads, sides and drinks.">
-<meta name="robots" content="noindex"><link rel="canonical" href="https://example.com/menu/"><link rel="icon" href="data:,">
-<style>
-:root{--cream:#fbf7ef;--green:#173f2f;--ink:#1d2420;--muted:#4b544f;--accent:#c2410c;--line:#e3dccd}
-*,*::before,*::after{box-sizing:border-box}
-html{scroll-padding-top:120px}
-@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
-body{margin:0;font:17px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--cream);padding-bottom:84px}
-:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
-.skip{position:absolute;left:-999px;top:.5rem;background:#fff;padding:.75rem;z-index:50}.skip:focus{left:.5rem}
-header{background:var(--green);color:#fff;padding:1rem}
-header h1{margin:0;font-size:1.6rem}header p{margin:.2rem 0 0;color:#dfe9e3;font-size:.95rem}
-.cats{position:sticky;top:0;z-index:10;background:var(--cream);border-bottom:1px solid var(--line)}
-.cats ul{list-style:none;margin:0;padding:.6rem 1rem;display:flex;gap:.5rem;overflow-x:auto;scroll-snap-type:x proximity;scrollbar-width:none}
-.cats ul::-webkit-scrollbar{display:none}
-.cats li{scroll-snap-align:start;flex:0 0 auto}
-.cats a{display:inline-flex;align-items:center;min-height:44px;padding:.4rem 1rem;border-radius:999px;border:1.5px solid var(--line);background:#fff;color:var(--green);text-decoration:none;font-weight:700;white-space:nowrap}
-.cats a[aria-current=true]{background:var(--green);color:#fff;border-color:var(--green)}
-main{max-width:760px;margin:0 auto;padding:0 1rem}
-section{padding-top:1.5rem}
-h2{font-size:1.4rem;color:var(--green);margin:0 0 .5rem}
-.items{list-style:none;margin:0;padding:0}
-.item{display:flex;justify-content:space-between;gap:1rem;padding:.9rem 0;border-bottom:1px solid var(--line)}
-.item h3{margin:0;font-size:1.05rem}.item p{margin:.15rem 0 0;color:var(--muted);font-size:.95rem}
-.price{font-weight:700;white-space:nowrap}
-.note{color:var(--muted);font-size:.9rem;margin:1.5rem 0}
-.order{position:fixed;left:1rem;right:1rem;bottom:calc(.75rem + env(safe-area-inset-bottom));display:flex;justify-content:center;align-items:center;min-height:56px;background:var(--accent);color:#fff;font-weight:800;border-radius:14px;text-decoration:none;box-shadow:0 8px 20px rgba(0,0,0,.18);max-width:728px;margin:0 auto}
-</style></head><body>
-<a class="skip" href="#menu">Skip to menu</a>
-<header><h1>Our menu</h1><p>Fern &amp; Fig Kitchen &middot; practice demo, sample prices</p></header>
-<nav class="cats" aria-label="Menu categories"><ul><li><a href="#c-salads">Salads</a></li><li><a href="#c-wraps">Wraps</a></li><li><a href="#c-bowls">Bowls</a></li><li><a href="#c-flatbreads">Flatbreads</a></li><li><a href="#c-sides">Sides</a></li><li><a href="#c-drinks">Drinks</a></li></ul></nav>
-<main id="menu">
-<section id="c-salads" aria-labelledby="h-salads"><h2 id="h-salads">Salads</h2><ul class="items"><li class="item"><div><h3>Garden salad</h3><p>Mixed greens, cucumber, tomato, carrot</p></div><span class="price">$9.50</span></li><li class="item"><div><h3>Greek salad</h3><p>Romaine, feta, olives, red onion</p></div><span class="price">$10.50</span></li><li class="item"><div><h3>Steak salad</h3><p>Sirloin, greens, balsamic</p></div><span class="price">$14.00</span></li><li class="item"><div><h3>Cobb salad</h3><p>Chicken, egg, bacon, avocado</p></div><span class="price">$12.50</span></li></ul></section>
-<section id="c-wraps" aria-labelledby="h-wraps"><h2 id="h-wraps">Wraps</h2><ul class="items"><li class="item"><div><h3>Grilled chicken wrap</h3><p>Romaine, tomato, feta, garlic sauce</p></div><span class="price">$11.00</span></li><li class="item"><div><h3>Falafel wrap</h3><p>Hummus, pickles, tahini</p></div><span class="price">$10.00</span></li><li class="item"><div><h3>Turkey club wrap</h3><p>Turkey, bacon, lettuce, tomato</p></div><span class="price">$11.50</span></li></ul></section>
-<section id="c-bowls" aria-labelledby="h-bowls"><h2 id="h-bowls">Bowls</h2><ul class="items"><li class="item"><div><h3>Mediterranean bowl</h3><p>Rice, chickpeas, cucumber, tzatziki</p></div><span class="price">$12.00</span></li><li class="item"><div><h3>Harvest bowl</h3><p>Quinoa, squash, kale, cider vinaigrette</p></div><span class="price">$12.50</span></li><li class="item"><div><h3>Salmon bowl</h3><p>Grilled salmon, greens, lemon</p></div><span class="price">$15.50</span></li></ul></section>
-<section id="c-flatbreads" aria-labelledby="h-flatbreads"><h2 id="h-flatbreads">Flatbreads</h2><ul class="items"><li class="item"><div><h3>Margherita</h3><p>Tomato, mozzarella, basil</p></div><span class="price">$10.00</span></li><li class="item"><div><h3>Garden flatbread</h3><p>Roasted vegetables, mozzarella</p></div><span class="price">$11.00</span></li></ul></section>
-<section id="c-sides" aria-labelledby="h-sides"><h2 id="h-sides">Sides</h2><ul class="items"><li class="item"><div><h3>Hummus and pita</h3><p>House hummus, warm pita</p></div><span class="price">$6.00</span></li><li class="item"><div><h3>Sweet potato fries</h3><p>With chipotle dip</p></div><span class="price">$5.00</span></li><li class="item"><div><h3>Soup of the day</h3><p>Ask in store</p></div><span class="price">$5.50</span></li></ul></section>
-<section id="c-drinks" aria-labelledby="h-drinks"><h2 id="h-drinks">Drinks</h2><ul class="items"><li class="item"><div><h3>Fresh lemonade</h3><p>Made daily</p></div><span class="price">$3.50</span></li><li class="item"><div><h3>Iced tea</h3><p>Unsweetened</p></div><span class="price">$3.00</span></li></ul></section>
-<p class="note">Demo menu for training. Prices are made up.</p></main>
-<footer><a class="order" href="#" data-track="order_menu">Order pickup</a></footer>
-<script>
-const links=[...document.querySelectorAll('.cats a')];
-const secs=[...document.querySelectorAll('main section')];
-const ul=document.querySelector('.cats ul');
-let current=null,lock=0;
-function setActive(id){if(id===current)return;current=id;for(const l of links){if(l.hash==='#'+id){l.setAttribute('aria-current','true');const li=l.parentElement;ul.scrollTo({left:li.offsetLeft-ul.clientWidth/2+li.offsetWidth/2});}else l.removeAttribute('aria-current');}}
-function onScroll(){if(Date.now()<lock)return;const line=140;let id=secs[0].id;for(const s of secs){if(s.getBoundingClientRect().top<=line)id=s.id;}
- if(innerHeight+scrollY>=document.documentElement.scrollHeight-2)id=secs[secs.length-1].id;setActive(id);}
-let raf=0;addEventListener('scroll',()=>{if(!raf)raf=requestAnimationFrame(()=>{raf=0;onScroll();});},{passive:true});
-links.forEach(l=>l.addEventListener('click',()=>{setActive(l.hash.slice(1));lock=Date.now()+800;}));
-onScroll();
-</script>
+<meta name="description" content="Fictional practice menu: search salads, wraps and bowls, filter vegan, gluten-free or high-protein.">
+<meta name="robots" content="noindex"><meta name="color-scheme" content="light dark"><meta name="theme-color" content="#173f2f"><link rel="icon" href="data:,">
+<script>try{var t=localStorage.getItem('ff-theme');document.documentElement.dataset.theme=t||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch(e){}</script>
+<link rel="stylesheet" href="../css/site.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Menu", "name": "Fern & Fig demo menu", "inLanguage": "en", "hasMenuSection": [{"@type": "MenuSection", "name": "Salads", "hasMenuItem": [{"@type": "MenuItem", "name": "Garden crunch salad", "description": "Romaine, cucumber, chickpeas, lemon-herb", "offers": {"@type": "Offer", "price": "9.50", "priceCurrency": "USD"}, "suitableForDiet": ["https://schema.org/VeganDiet"]}, {"@type": "MenuItem", "name": "Grilled chicken Caesar", "description": "Romaine, parmesan, croutons", "offers": {"@type": "Offer", "price": "11.95", "priceCurrency": "USD"}}, {"@type": "MenuItem", "name": "Steak & blue salad", "description": "Sliced steak, blue cheese, greens", "offers": {"@type": "Offer", "price": "13.95", "priceCurrency": "USD"}}]}, {"@type": "MenuSection", "name": "Wraps", "hasMenuItem": [{"@type": "MenuItem", "name": "Grilled chicken wrap", "description": "Romaine, tomato, feta, garlic sauce", "offers": {"@type": "Offer", "price": "10.95", "priceCurrency": "USD"}}, {"@type": "MenuItem", "name": "Falafel wrap", "description": "Hummus, pickles, tahini", "offers": {"@type": "Offer", "price": "9.95", "priceCurrency": "USD"}, "suitableForDiet": ["https://schema.org/VeganDiet"]}, {"@type": "MenuItem", "name": "Turkey club wrap", "description": "Turkey, bacon, lettuce, tomato", "offers": {"@type": "Offer", "price": "10.50", "priceCurrency": "USD"}}]}, {"@type": "MenuSection", "name": "Bowls", "hasMenuItem": [{"@type": "MenuItem", "name": "Mediterranean plate", "description": "Hummus, falafel, tabbouleh, pita", "offers": {"@type": "Offer", "price": "11.50", "priceCurrency": "USD"}, "suitableForDiet": ["https://schema.org/VeganDiet"]}, {"@type": "MenuItem", "name": "Power bowl", "description": "Quinoa, chicken, roasted veg", "offers": {"@type": "Offer", "price": "12.95", "priceCurrency": "USD"}}, {"@type": "MenuItem", "name": "Rice & bean bowl", "description": "Black beans, salsa, avocado", "offers": {"@type": "Offer", "price": "9.95", "priceCurrency": "USD"}, "suitableForDiet": ["https://schema.org/VeganDiet"]}]}, {"@type": "MenuSection", "name": "Sandwiches", "hasMenuItem": [{"@type": "MenuItem", "name": "Steak sandwich", "description": "Chopped steak, onions, cheese", "offers": {"@type": "Offer", "price": "12.50", "priceCurrency": "USD"}}, {"@type": "MenuItem", "name": "Caprese melt", "description": "Mozzarella, tomato, basil", "offers": {"@type": "Offer", "price": "9.75", "priceCurrency": "USD"}}]}, {"@type": "MenuSection", "name": "Drinks", "hasMenuItem": [{"@type": "MenuItem", "name": "Fresh lemonade", "description": "Made daily", "offers": {"@type": "Offer", "price": "3.50", "priceCurrency": "USD"}, "suitableForDiet": ["https://schema.org/VeganDiet"]}, {"@type": "MenuItem", "name": "Iced tea", "description": "Unsweetened", "offers": {"@type": "Offer", "price": "3.00", "priceCurrency": "USD"}, "suitableForDiet": ["https://schema.org/VeganDiet"]}]}]}</script>
+</head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="wrap">
+ <a class="brand" href="../">Fern &amp; Fig</a>
+ <nav aria-label="Main"><ul><li><a href="../">Home</a></li><li><a href="../menu/" aria-current="page">Menu</a></li><li><a href="../#catering">Catering</a></li><li><a href="../#visit">Locations</a></li></ul></nav>
+ <div class="tools"><label class="sr" for="store">Choose store</label><select id="store"><option value="north">North store</option><option value="south">South store</option></select>
+ <button class="icon-btn" id="theme" type="button" aria-pressed="false" aria-label="Dark mode">☾</button>
+ <a class="btn btn-glow" data-order href="#order-north" data-track="order_header">Order pickup</a></div>
+</div></header>
+<main id="main" class="wrap">
+<h1>Menu</h1><p class="demo">Demo menu for training. Prices are made up. Ask staff about allergens.</p>
+<p><span class="badge" data-badge>Checking hours…</span> at <span data-store-name>North store</span></p>
+<div class="mtools">
+ <label class="sr" for="q">Search the menu</label><input id="q" class="search" type="search" placeholder="Search the menu (try “chicken”)" autocomplete="off">
+ <div class="chips" role="group" aria-label="Dietary filters"><button class="chip" type="button" data-diet="vegan" aria-pressed="false">Vegan</button><button class="chip" type="button" data-diet="gf" aria-pressed="false">Gluten-free</button><button class="chip" type="button" data-diet="protein" aria-pressed="false">High protein</button></div>
+ <nav class="cats" aria-label="Menu categories"><ul><li><a href="#salads">Salads</a></li><li><a href="#wraps">Wraps</a></li><li><a href="#bowls">Bowls</a></li><li><a href="#sandwiches">Sandwiches</a></li><li><a href="#drinks">Drinks</a></li></ul></nav>
+</div>
+<p id="count" class="note" role="status" aria-live="polite"></p>
+<section id="salads" aria-labelledby="h-salads"><h2 id="h-salads">Salads</h2><ul class="items"><li class="item card" data-diet="vegan gf"><div><h3>Garden crunch salad</h3><p>Romaine, cucumber, chickpeas, lemon-herb</p><span class="tag">Vegan</span><span class="tag">Gluten-free</span></div><span class="price">$9.50</span></li><li class="item card" data-diet="protein"><div><h3>Grilled chicken Caesar</h3><p>Romaine, parmesan, croutons</p><span class="tag">High protein</span></div><span class="price">$11.95</span></li><li class="item card" data-diet="protein gf"><div><h3>Steak &amp; blue salad</h3><p>Sliced steak, blue cheese, greens</p><span class="tag">High protein</span><span class="tag">Gluten-free</span></div><span class="price">$13.95</span></li></ul></section>
+<section id="wraps" aria-labelledby="h-wraps"><h2 id="h-wraps">Wraps</h2><ul class="items"><li class="item card" data-diet="protein"><div><h3>Grilled chicken wrap</h3><p>Romaine, tomato, feta, garlic sauce</p><span class="tag">High protein</span></div><span class="price">$10.95</span></li><li class="item card" data-diet="vegan"><div><h3>Falafel wrap</h3><p>Hummus, pickles, tahini</p><span class="tag">Vegan</span></div><span class="price">$9.95</span></li><li class="item card" data-diet="protein"><div><h3>Turkey club wrap</h3><p>Turkey, bacon, lettuce, tomato</p><span class="tag">High protein</span></div><span class="price">$10.50</span></li></ul></section>
+<section id="bowls" aria-labelledby="h-bowls"><h2 id="h-bowls">Bowls</h2><ul class="items"><li class="item card" data-diet="vegan"><div><h3>Mediterranean plate</h3><p>Hummus, falafel, tabbouleh, pita</p><span class="tag">Vegan</span></div><span class="price">$11.50</span></li><li class="item card" data-diet="protein gf"><div><h3>Power bowl</h3><p>Quinoa, chicken, roasted veg</p><span class="tag">High protein</span><span class="tag">Gluten-free</span></div><span class="price">$12.95</span></li><li class="item card" data-diet="vegan gf"><div><h3>Rice &amp; bean bowl</h3><p>Black beans, salsa, avocado</p><span class="tag">Vegan</span><span class="tag">Gluten-free</span></div><span class="price">$9.95</span></li></ul></section>
+<section id="sandwiches" aria-labelledby="h-sandwiches"><h2 id="h-sandwiches">Sandwiches</h2><ul class="items"><li class="item card" data-diet="protein"><div><h3>Steak sandwich</h3><p>Chopped steak, onions, cheese</p><span class="tag">High protein</span></div><span class="price">$12.50</span></li><li class="item card" data-diet=""><div><h3>Caprese melt</h3><p>Mozzarella, tomato, basil</p></div><span class="price">$9.75</span></li></ul></section>
+<section id="drinks" aria-labelledby="h-drinks"><h2 id="h-drinks">Drinks</h2><ul class="items"><li class="item card" data-diet="vegan gf"><div><h3>Fresh lemonade</h3><p>Made daily</p><span class="tag">Vegan</span><span class="tag">Gluten-free</span></div><span class="price">$3.50</span></li><li class="item card" data-diet="vegan gf"><div><h3>Iced tea</h3><p>Unsweetened</p><span class="tag">Vegan</span><span class="tag">Gluten-free</span></div><span class="price">$3.00</span></li></ul></section>
+</main>
+<footer class="site"><div class="wrap"><p>Fern &amp; Fig Kitchen is a fictional practice business. Addresses, hours, phone numbers (555) and reviews are example data. No real ordering.</p></div></footer>
+<nav class="dock" aria-label="Quick actions"><a class="btn btn-line" data-tel href="tel:+15555550142">Call</a><a class="btn btn-glow" data-order href="#order-north" data-track="order_dock">Order pickup</a></nav>
+<script type="application/json" id="ff-data">{"_note": "Fictional demo data", "stores": [{"id": "north", "name": "North store", "tel": "+15555550142", "order": "#order-north", "hours": {"mon": ["11:00", "20:00"], "tue": ["11:00", "20:00"], "wed": ["11:00", "20:00"], "thu": ["11:00", "21:00"], "fri": ["11:00", "21:00"], "sat": ["11:30", "21:00"], "sun": null}}, {"id": "south", "name": "South store", "tel": "+15555550177", "order": "#order-south", "hours": {"mon": null, "tue": ["11:00", "20:00"], "wed": ["11:00", "20:00"], "thu": ["11:00", "21:00"], "fri": ["11:00", "21:00"], "sat": ["11:30", "21:00"], "sun": ["12:00", "18:00"]}}]}</script>
+<script src="../js/site.js" defer></script>
 </body></html>
