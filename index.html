@@ -4,108 +4,73 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Fern &amp; Fig Kitchen | Fresh salads, wraps and platters (demo)</title>
 <meta name="description" content="Fern & Fig Kitchen is a fictional practice restaurant: fresh salads, wraps and catering platters. Order pickup online or call.">
-<meta name="robots" content="noindex"><link rel="canonical" href="https://example.com/">
-<meta property="og:title" content="Fern & Fig Kitchen (demo)"><meta property="og:type" content="website"><meta property="og:image" content="https://example.com/og.jpg">
-<meta name="theme-color" content="#173f2f"><link rel="icon" href="data:,">
+<meta name="robots" content="noindex"><meta name="color-scheme" content="light dark"><meta name="theme-color" content="#173f2f"><link rel="icon" href="data:,">
+<script>try{var t=localStorage.getItem('ff-theme');document.documentElement.dataset.theme=t||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch(e){}</script>
 <link rel="preload" as="image" href="img/salad-hero-960.webp" imagesrcset="img/salad-hero-480.webp 480w, img/salad-hero-960.webp 500w" imagesizes="(min-width:900px) 45vw, 100vw" fetchpriority="high">
-<style>
-:root{--cream:#fbf7ef;--green:#173f2f;--green-2:#2c5a45;--ink:#1d2420;--muted:#4b544f;--accent:#c2410c;--accent-d:#9a330a;--line:#e3dccd;--r:16px}
-*,*::before,*::after{box-sizing:border-box}
-html{scroll-padding-bottom:96px}@media (min-width:900px){html{scroll-padding-bottom:0}}
-body{margin:0;font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--cream);padding-bottom:calc(76px + env(safe-area-inset-bottom))}
-img{max-width:100%;height:auto;display:block}
-:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-.skip{position:absolute;left:-999px;top:.5rem;background:#fff;padding:.75rem 1rem;z-index:50}.skip:focus{left:.5rem}
-.wrap{width:min(1160px,100% - 2rem);margin-inline:auto}
-.top{background:var(--green);color:#fff}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.6rem}
-.brand{color:#fff;text-decoration:none;font-weight:800;font-size:1.3rem;letter-spacing:.01em}
-.top nav ul{display:none;list-style:none;margin:0;padding:0;gap:.25rem}
-.top nav a{color:#fff;text-decoration:none;padding:.7rem .8rem;border-radius:8px;display:inline-block}
-.top nav a:hover{background:rgba(255,255,255,.12)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:.4rem;min-height:48px;padding:.8rem 1.4rem;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid transparent;font-size:1rem}
-.btn-order{background:var(--accent);color:#fff;box-shadow:0 6px 18px rgba(194,65,12,.28)}
-.btn-order:hover{background:var(--accent-d)}
-.btn-line{border-color:var(--green);color:var(--green)}
-.top .btn-order{display:none}
-.hero{display:grid;gap:1.5rem;padding-block:1.75rem 2.5rem}
-.eyebrow{font-weight:700;color:var(--green-2);text-transform:uppercase;letter-spacing:.08em;font-size:.85rem;margin:0}
-h1{font-size:clamp(2.1rem,6vw,3.6rem);line-height:1.05;margin:.3rem 0 .8rem;color:var(--green);max-width:15ch}
-.lede{font-size:1.15rem;color:var(--muted);max-width:44ch;margin:0}
-.cta{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.4rem}
-.cta .btn-order{flex:1 1 100%}
-.proof{margin-top:1rem;font-size:.95rem;color:var(--muted)}
-.hero-img img{border-radius:var(--r);width:100%;aspect-ratio:5/4;object-fit:cover}
-section{padding-block:2.5rem}
-h2{font-size:clamp(1.6rem,3.5vw,2.3rem);line-height:1.15;color:var(--green);margin:0 0 .4rem}
-.sub{color:var(--muted);margin:0 0 1.5rem}
-.picks{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
-.pick{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
-.pick img{aspect-ratio:16/10;object-fit:cover;width:100%}
-.pick div{padding:1rem 1.1rem 1.2rem}
-.pick h3{margin:0 0 .25rem;font-size:1.15rem}
-.pick p{margin:0;color:var(--muted)}
-.tag{display:inline-block;font-size:.8rem;font-weight:700;background:#e8f0e9;color:var(--green);padding:.15rem .55rem;border-radius:999px;margin-bottom:.4rem}
-.band{background:var(--green);color:#fff;border-radius:var(--r);padding:2rem 1.5rem;display:grid;gap:1rem}
-.band h2{color:#fff}.band p{margin:0;color:#e6efe9}
-.band .btn-line{border-color:#fff;color:#fff}
-.stores{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-.store{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:1.25rem}
-.store h3{margin:0 0 .3rem}.store address{font-style:normal;color:var(--muted)}
-.store .row{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.9rem}
-footer{background:#10241b;color:#dfe8e2;padding-block:2rem;margin-top:1rem;font-size:.95rem}
-footer a{color:#fff}
-.dock{position:fixed;inset:auto 0 0 0;background:#fff;border-top:1px solid var(--line);padding:.6rem 1rem calc(.6rem + env(safe-area-inset-bottom));display:grid;grid-template-columns:1fr 1fr 2fr;gap:.5rem;z-index:20;box-shadow:0 -6px 18px rgba(0,0,0,.06)}
-.dock a{min-height:52px;display:flex;align-items:center;justify-content:center;border-radius:12px;text-decoration:none;font-weight:700;color:var(--green);border:1.5px solid var(--line)}
-.dock a.order{background:var(--accent);color:#fff;border-color:var(--accent)}
-@media (min-width:900px){
- body{padding-bottom:0}.dock{display:none}
- .top nav ul{display:flex}.top .btn-order{display:inline-flex}
- .hero{grid-template-columns:1.05fr .95fr;align-items:center;padding-block:3.5rem}
- .cta .btn-order{flex:0 0 auto}
- .band{grid-template-columns:2fr 1fr;align-items:center;padding:2.5rem}
-}
-@media (prefers-reduced-motion:no-preference){.btn,.dock a{transition:background-color .2s,transform .2s}.btn-order:active{transform:scale(.98)}}
-</style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"Fern & Fig Kitchen (demo)","servesCuisine":["Salads","Mediterranean"],"url":"https://example.com/","telephone":"+1-555-555-0142","priceRange":"$$","hasMenu":"https://example.com/menu/","address":{"@type":"PostalAddress","streetAddress":"100 Example St","addressLocality":"Exampletown","addressRegion":"NJ","postalCode":"00000","addressCountry":"US"}}</script>
-</head>
-<body>
+<link rel="stylesheet" href="css/site.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Restaurant", "@id": "https://example.com/#north", "name": "Fern & Fig Kitchen \u2013 North (demo)", "url": "https://example.com/", "telephone": "+1-555-555-0142", "servesCuisine": ["Salads", "Mediterranean"], "priceRange": "$$", "hasMenu": "https://example.com/menu/", "acceptsReservations": false, "address": {"@type": "PostalAddress", "streetAddress": "100 Example St", "addressLocality": "Exampletown", "addressRegion": "NJ", "postalCode": "00000", "addressCountry": "US"}, "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "11:00", "closes": "20:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "11:00", "closes": "20:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "11:00", "closes": "20:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "11:00", "closes": "21:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "11:00", "closes": "21:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "11:30", "closes": "21:00"}]}, {"@type": "Restaurant", "@id": "https://example.com/#south", "name": "Fern & Fig Kitchen \u2013 South (demo)", "url": "https://example.com/", "telephone": "+1-555-555-0177", "servesCuisine": ["Salads", "Mediterranean"], "priceRange": "$$", "hasMenu": "https://example.com/menu/", "address": {"@type": "PostalAddress", "streetAddress": "200 Sample Ave", "addressLocality": "Sampleville", "addressRegion": "NJ", "postalCode": "00000", "addressCountry": "US"}, "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "11:00", "closes": "20:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "11:00", "closes": "20:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "11:00", "closes": "21:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "11:00", "closes": "21:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "11:30", "closes": "21:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "12:00", "closes": "18:00"}]}]}</script>
+</head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="top"><div class="wrap">
- <a class="brand" href="#">Fern &amp; Fig</a>
- <nav aria-label="Main"><ul><li><a href="#picks">Menu</a></li><li><a href="#catering">Catering</a></li><li><a href="#visit">Locations</a></li></ul></nav>
- <a class="btn btn-order" href="#order" data-track="order_header">Order pickup</a>
+ <a class="brand" href="./">Fern &amp; Fig</a>
+ <nav aria-label="Main"><ul><li><a href="./" aria-current="page">Home</a></li><li><a href="./menu/">Menu</a></li><li><a href="./#catering">Catering</a></li><li><a href="./#visit">Locations</a></li></ul></nav>
+ <div class="tools"><label class="sr" for="store">Choose store</label><select id="store"><option value="north">North store</option><option value="south">South store</option></select>
+ <button class="icon-btn" id="theme" type="button" aria-pressed="false" aria-label="Dark mode">☾</button>
+ <a class="btn btn-glow" data-order href="#order-north" data-track="order_header">Order pickup</a></div>
 </div></header>
 <main id="main">
  <div class="wrap hero">
   <div>
-   <p class="eyebrow">Fresh daily &middot; Practice demo</p>
+   <p class="demo">Practice demo · fictional restaurant</p>
+   <p class="eyebrow">Fresh daily · <span data-store-name>North store</span></p>
    <h1>Big, fresh salads made to order</h1>
+   <p><span class="badge" data-badge>Checking hours…</span></p>
    <p class="lede">Crisp greens, warm grilled proteins and house dressings. Ready for pickup in about 15 minutes.</p>
-   <div class="cta"><a class="btn btn-order" id="order" href="#" data-track="order_hero">Order pickup</a><a class="btn btn-line" href="#picks">See the menu</a></div>
-   <p class="proof">Sample review area: show your real Google rating and review count here, with attribution.</p>
+   <div class="cta"><a class="btn btn-glow" data-order href="#order-north" data-track="order_hero">Order pickup</a><a class="btn btn-line" href="menu/">See the menu</a></div>
   </div>
   <div class="hero-img"><img src="img/salad-hero-960.webp" srcset="img/salad-hero-480.webp 480w, img/salad-hero-960.webp 500w" sizes="(min-width:900px) 45vw, 100vw" width="500" height="396" alt="A large green salad topped with grilled chicken, tomatoes and cucumbers" fetchpriority="high"></div>
  </div>
  <section id="picks" aria-labelledby="h-picks"><div class="wrap">
-  <h2 id="h-picks">Guest favorites</h2><p class="sub">Four dishes we would order first.</p>
+  <h2 id="h-picks" class="reveal">Guest favorites</h2><p class="sub">Four dishes we would order first.</p>
   <div class="picks">
-   <article class="pick"><img src="img/wrap2-480.webp" width="480" height="228" loading="lazy" alt="Two grilled wraps cut in half"><div><span class="tag">Best seller</span><h3>Grilled chicken wrap</h3><p>Romaine, tomato, feta and garlic sauce.</p></div></article>
-   <article class="pick"><img src="img/mediterranean-480.webp" width="380" height="208" loading="lazy" alt="Platter of hummus, pita and fresh vegetables"><div><h3>Mediterranean plate</h3><p>Hummus, falafel, tabbouleh and warm pita.</p></div></article>
-   <article class="pick"><img src="img/steak-480.webp" width="480" height="203" loading="lazy" alt="Chopped steak sandwich on a toasted roll"><div><h3>Steak sandwich</h3><p>Chopped steak, onions and melted cheese.</p></div></article>
-   <article class="pick"><img src="img/pizza-480.webp" width="368" height="208" loading="lazy" alt="Round pepperoni pizza"><div><span class="tag">New</span><h3>Pepperoni pizza</h3><p>Hand-stretched crust and mozzarella.</p></div></article>
+   <article class="pick reveal"><img src="img/wrap2-480.webp" width="480" height="228" loading="lazy" alt="Two grilled wraps cut in half"><div><span class="tag">Best seller</span><h3>Grilled chicken wrap</h3><p>Romaine, tomato, feta and garlic sauce.</p></div></article>
+   <article class="pick reveal"><img src="img/mediterranean-480.webp" width="380" height="208" loading="lazy" alt="Platter of hummus, pita and fresh vegetables"><div><span class="tag">Vegan</span><h3>Mediterranean plate</h3><p>Hummus, falafel, tabbouleh and warm pita.</p></div></article>
+   <article class="pick reveal"><img src="img/steak-480.webp" width="480" height="203" loading="lazy" alt="Chopped steak sandwich on a toasted roll"><div><span class="tag">High protein</span><h3>Steak sandwich</h3><p>Chopped steak, onions and melted cheese.</p></div></article>
+   <article class="pick reveal"><img src="img/pizza-480.webp" width="368" height="208" loading="lazy" alt="Round pepperoni pizza"><div><span class="tag">New</span><h3>Pepperoni pizza</h3><p>Hand-stretched crust and mozzarella.</p></div></article>
   </div></div></section>
- <section id="catering" aria-labelledby="h-cat"><div class="wrap band">
-  <div><h2 id="h-cat">Feeding a group?</h2><p>Platters, wraps and salads for offices and parties. We can deliver.</p></div>
-  <div><a class="btn btn-line" href="#">See catering menu</a></div>
+ <section id="reviews" aria-labelledby="h-rev"><div class="wrap reveal">
+  <h2 id="h-rev">What guests say</h2>
+  <p class="summary"><strong>4.6</strong><span class="stars meter" aria-hidden="true">★★★★★</span><span>average from 312 example reviews</span></p>
+  <p class="note">Example reviews for a fictional business. A real site would show its true overall rating and link to all reviews.</p>
+  <ul class="strip" tabindex="0" aria-label="Example reviews, scroll sideways for more">
+   <li class="card"><span class="stars" role="img" aria-label="Rated 5 out of 5">★★★★★</span><blockquote><p>Salad was huge and ready when I walked in.</p></blockquote><span class="who">J. R. · example review</span></li>
+   <li class="card"><span class="stars" role="img" aria-label="Rated 4 out of 5">★★★★☆</span><blockquote><p>Great platter for our office. Wish parking were easier.</p></blockquote><span class="who">M. K. · example review</span></li>
+   <li class="card"><span class="stars" role="img" aria-label="Rated 5 out of 5">★★★★★</span><blockquote><p>Vegan bowl for me, steak sandwich for my husband. Both great.</p></blockquote><span class="who">A. L. · example review</span></li>
+   <li class="card"><span class="stars" role="img" aria-label="Rated 3 out of 5">★★★☆☆</span><blockquote><p>Tasty wrap, but it took 25 minutes at lunch rush.</p></blockquote><span class="who">D. P. · example review</span></li>
+  </ul>
+ </div></section>
+ <section id="catering" aria-labelledby="h-cat"><div class="wrap band reveal">
+  <div><h2 id="h-cat">Feeding a group?</h2><p>Platters, wraps and salads for offices and parties. We can deliver.</p><p class="demo">Demo form: nothing is sent or stored.</p></div>
+  <div>
+   <form id="cater" novalidate aria-labelledby="h-cat">
+    <div class="field"><label for="name">Your name</label><input id="name" name="name" type="text" autocomplete="name" aria-describedby="name-err" required><span class="err" id="name-err" aria-live="polite"></span></div>
+    <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" aria-describedby="email-err" required><span class="err" id="email-err" aria-live="polite"></span></div>
+    <div class="field"><label for="msg">Tell us about your event</label><textarea id="msg" name="msg" rows="3" aria-describedby="msg-err" required></textarea><span class="err" id="msg-err" aria-live="polite"></span></div>
+    <div class="hp" aria-hidden="true"><label for="company">Company (leave empty)</label><input id="company" name="company" type="text" tabindex="-1" autocomplete="off"></div>
+    <button class="btn btn-glow" type="submit">Send inquiry</button>
+   </form>
+   <div id="cater-done" class="success" tabindex="-1" hidden><h3>Thanks! (demo)</h3><p>This practice form doesn’t send anything. A real site would reply within one business day.</p></div>
+  </div>
  </div></section>
  <section id="visit" aria-labelledby="h-visit"><div class="wrap">
   <h2 id="h-visit">Visit us</h2><p class="sub">Demo addresses. Not real locations.</p>
   <div class="stores">
-   <div class="store"><h3>North store</h3><address>100 Example St, Exampletown, NJ</address><div class="row"><a class="btn btn-order" href="#" data-track="order_north">Order</a><a class="btn btn-line" href="tel:+15555550142">Call</a></div></div>
-   <div class="store"><h3>South store</h3><address>200 Sample Ave, Sampleville, NJ</address><div class="row"><a class="btn btn-order" href="#" data-track="order_south">Order</a><a class="btn btn-line" href="tel:+15555550143">Call</a></div></div>
+   <div class="store reveal" data-id="north"><h3>North store</h3><address>100 Example St, Exampletown, NJ</address><p class="note">Mon–Wed 11–8 · Thu–Fri 11–9 · Sat 11:30–9 · Sun closed</p><div class="row"><button class="btn btn-line" type="button" data-pick="north">Make my store</button><a class="btn btn-line" href="tel:+15555550142">Call&nbsp;North</a></div></div>
+   <div class="store reveal" data-id="south"><h3>South store</h3><address>200 Sample Ave, Sampleville, NJ</address><p class="note">Mon closed · Tue–Wed 11–8 · Thu–Fri 11–9 · Sat 11:30–9 · Sun 12–6</p><div class="row"><button class="btn btn-line" type="button" data-pick="south">Make my store</button><a class="btn btn-line" href="tel:+15555550177">Call&nbsp;South</a></div></div>
   </div></div></section>
 </main>
-<footer><div class="wrap"><p>Fern &amp; Fig Kitchen is a fictional practice site. Photos used for local testing only.</p></div></footer>
-<nav class="dock" aria-label="Quick actions"><a href="tel:+15555550142">Call</a><a href="#visit">Directions</a><a class="order" href="#order">Order pickup</a></nav>
+<footer class="site"><div class="wrap"><p>Fern &amp; Fig Kitchen is a fictional practice business. Addresses, hours, phone numbers (555) and reviews are example data. No real ordering.</p></div></footer>
+<nav class="dock" aria-label="Quick actions"><a class="btn btn-line" data-tel href="tel:+15555550142">Call</a><a class="btn btn-glow" data-order href="#order-north" data-track="order_dock">Order pickup</a></nav>
+<script type="application/json" id="ff-data">{"_note": "Fictional demo data", "stores": [{"id": "north", "name": "North store", "tel": "+15555550142", "order": "#order-north", "hours": {"mon": ["11:00", "20:00"], "tue": ["11:00", "20:00"], "wed": ["11:00", "20:00"], "thu": ["11:00", "21:00"], "fri": ["11:00", "21:00"], "sat": ["11:30", "21:00"], "sun": null}}, {"id": "south", "name": "South store", "tel": "+15555550177", "order": "#order-south", "hours": {"mon": null, "tue": ["11:00", "20:00"], "wed": ["11:00", "20:00"], "thu": ["11:00", "21:00"], "fri": ["11:00", "21:00"], "sat": ["11:30", "21:00"], "sun": ["12:00", "18:00"]}}]}</script>
+<script src="js/site.js" defer></script>
 </body></html>
